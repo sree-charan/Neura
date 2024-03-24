@@ -42,7 +42,7 @@ const trigger = async (prompt: string, art: string, message: WAWebJS.Message, op
     const buttonSelector = ".iMLenh";
     const closeButtonSelector = ".FkQre";
     const outputSelector = ".gbeYse";
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox'] });
     try {
         const page = await browser.newPage();
         await page.goto("https://dream.ai/create");

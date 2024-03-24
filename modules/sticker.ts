@@ -2,7 +2,6 @@ import WAWebJS, { Message } from "whatsapp-web.js";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 import { Send } from "../util/reply";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
 const Util = require("whatsapp-web.js/src/util/Util");
 Util.setFfmpegPath(ffmpegPath);
 

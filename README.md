@@ -18,14 +18,6 @@ The associated process will be finished when a new message is formed with the me
 > To tag only non-admins use &emsp;"$"<br>
 > To tag none use &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; "."<br>
 
-### How to Get Social Media Content
-
-```
-#md https://twitter.com/urstrulyMahesh/status/1523898728381227008
-
-By doing this, the media will be downloaded and sent to the appropriate chat. Even better, you can download numerous files from various urls by separating them with spaces or new lines.
-```
-
 ### Converting image/video to sticker
 
 ```
@@ -65,10 +57,10 @@ For testing
 
 ## Contribution
 
-- Fork the repositery
+- Fork the repository
 - Follow Installation and Running
 - Add new module in /modules folder
-- You should follow ESLint rules before creating a pull request.
+- Follow ESLint rules before creating a pull request.
 - It must have below snippet with proper filename
 
 ```ts

@@ -33,7 +33,7 @@ const translate = async (message: WAWebJS.Message, text: string, from?: string, 
     const url = `https://translate.google.com/?hl=en&sl=${from.substring(1)}&tl=${to.substring(1)}&text=${encodeURIComponent(text)}&op=translate`;
     let result = "";
     try {
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({ headless: "new", args: ['--no-sandbox'] });
         const page = await browser.newPage();
         await page.goto(url);
         await page.waitForSelector(".ryNqvb");

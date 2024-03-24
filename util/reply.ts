@@ -5,11 +5,8 @@ import pdfkit from "pdfkit";
 export class Send {
     static fileLimit = 15.5;
     static text = async (message: Message, options: WAWebJS.MessageSendOptions, text: string, needReact = true) => {
-        const formatter = "```";
-        if (text.startsWith(formatter) && text.endsWith(formatter)) {
-            text = text.substring(formatter.length, text.length - formatter.length);
-        }
-        return message.reply(`${formatter}${text}${formatter}`, undefined, options)
+        text = text.replace(/```/g, '');
+        return message.reply(text, undefined, options)
             .then((replyMsg: Message) => {
                 if (needReact) {
                     React.success(message);

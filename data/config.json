@@ -34,6 +34,13 @@
         "example": ".del",
         "available": "public"
     },
+    "dns": {
+        "name": "dns",
+        "info": "Get DNS records of a domain",
+        "usage": "[prefix]dns [domain]",
+        "example": ".dns google.com",
+        "available": "public"
+    },
     "gm": {
         "name": "gm",
         "info": "Get media from quoted message",
@@ -88,6 +95,13 @@
         "info": "Get a random meme",
         "usage": "[prefix]meme",
         "example": ".meme",
+        "available": "public"
+    },
+    "news": {
+        "name": "news",
+        "info": "Get news",
+        "usage": "[prefix]news -[category]",
+        "example": ".news -technology",
         "available": "public"
     },
     "q": {
